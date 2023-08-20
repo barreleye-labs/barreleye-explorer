@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "semi": false,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "printWidth": 100,
+  "trailingComma": "none",
+  "importOrder": [
+    "^@/services/(.*)$",
+    "^@/stores/(.*)$",
+    "^@/router/(.*)$",
+    "^@/utils/(.*)$",
+    "^@/helpers/(.*)$",
+    "^@/plugins/(.*)$",
+    "^@/styles/(.*)$",
+    "^@/hooks/(.*)$",
+    "^@/locales/(.*)$",
+    "^@/views/(.*)$",
+    "^@/components/(.*)$",
+    "^@/enums/(.*)$",
+    "^@/constants/(.*)$",
+    "^@/config/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}
