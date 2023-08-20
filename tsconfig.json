@@ -1,0 +1,31 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules", // node_modules 디렉토리를 제외
+    "**/*.test.ts" // 모든 .test.ts 파일을 제외
+  ],
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    // added
+    "**/*.d.ts",
+    "mock/**/*",
+    "src/**/*.ts",
+    "src/**/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.jsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "vite.config.ts"
+  ],
+  "paths": {
+    "@": ["src"],
+    "@/*": ["./src/*"]
+  }
+}
