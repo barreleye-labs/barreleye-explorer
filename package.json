@@ -15,9 +15,10 @@
     "@tsconfig/node18": "^18.2.0",
     "@types/node": "^18.17.3",
     "@vue/tsconfig": "^0.4.0",
-    "lint": "eslint --ext .ts,.js,.vue .",
     "eslint": "^8.39.0",
+    "lint": "eslint --ext .ts,.js,.vue .",
     "nuxt": "^3.6.5",
+    "sass": "^1.66.1",
     "typescript": "^5.1.6",
     "unplugin-vue-components": "^0.25.1"
   },
