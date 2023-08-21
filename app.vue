@@ -6,6 +6,6 @@ const layout = 'default'
 
 <template>
   <NuxtLayout :name="layout">
-    [app.vue] some page content
+    <NuxtPage />
   </NuxtLayout>
 </template>
