@@ -2,6 +2,16 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "@": ["src"],
+      "@/*": ["./src/*"],
+      "@components/*": ["./components/*"],
+      "@assets/*": ["./assets/*"],
+      "@styles/*": ["./styles/*"],
+      "@contexts/*": ["./contexts/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@utils/*": ["./utils/*"]
+    },
     "moduleResolution": "node"
   },
   "exclude": [
@@ -24,8 +34,4 @@
     "types/**/*.ts",
     "vite.config.ts"
   ],
-  "paths": {
-    "@": ["src"],
-    "@/*": ["./src/*"]
-  }
 }
