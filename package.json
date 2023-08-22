@@ -16,7 +16,6 @@
     "@types/node": "^18.17.3",
     "@vue/tsconfig": "^0.4.0",
     "eslint": "^8.39.0",
-    "lint": "eslint --ext .ts,.js,.vue .",
     "nuxt": "^3.6.5",
     "sass": "^1.66.1",
     "typescript": "^5.1.6",

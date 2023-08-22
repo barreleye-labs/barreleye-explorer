@@ -22,7 +22,7 @@
 
 .footer-top{
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   span{
     color: #626262;
     font-size: 10px;
