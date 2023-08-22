@@ -1,6 +1,15 @@
+<script lang="ts" setup>
+
+</script>
+
 <template>
-  <div>
-    [layouts/default] Some default layout shared across all pages!
-    <NuxtPage />
-  </div>
+  <ClientOnly fallback-tag="span" fallback="Loading comments...">
+    <a-layout>
+      <LayoutSider />
+
+      <LayoutContent>
+        <slot />
+      </LayoutContent>
+    </a-layout>
+  </ClientOnly>
 </template>

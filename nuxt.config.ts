@@ -4,10 +4,14 @@ export default defineNuxtConfig({
   modules: [
     '@ant-design-vue/nuxt'
   ],
+  css: [
+    '@/styles/main.scss'
+  ],
   components: [
     {
       path: '~/components',
       pathPrefix: false
     }
   ]
+
 })
