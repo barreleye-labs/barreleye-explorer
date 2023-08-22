@@ -24,7 +24,7 @@ const getLogoClass = computed(() => {
     class="logo"
     :style="getLogoClass"
   >
-    Barreleyes&nbsp;<span>Explorer</span>
+    Barreleye&nbsp;<span>Explorer</span>
   </RouterLink>
 </template>
 
