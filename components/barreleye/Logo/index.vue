@@ -3,7 +3,7 @@ import { computed } from 'vue'
 
 interface Props {
   path: String,
-  color: String
+  color?: String
 }
 
 const props = defineProps<Props>()

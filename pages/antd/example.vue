@@ -11,8 +11,8 @@ const onClick = () => {
 <template>
   <div>
     <p>antd import example page</p>
-    <BaseButton type="default" size="middle" :loading="loading" @click="onClick">
+    <BarreleyeButton type="default" size="middle" :loading="loading" @click="onClick">
       button
-    </BaseButton>
+    </BarreleyeButton>
   </div>
 </template>

@@ -7,13 +7,11 @@ const { dataSource, columns } = props
 </script>
 
 <template>
-  <div>
-    <a-table :pagination="true" :data-source="dataSource" :columns="columns">
-      <template #title>
-        {{ ($route.name as String).toUpperCase() }}
-      </template>
-    </a-table>
-  </div>
+  <a-table :pagination="true" :data-source="dataSource" :columns="columns">
+    <template #title>
+      {{ ($route.name as String).toUpperCase() }}
+    </template>
+  </a-table>
 </template>
 
 <style lang="scss" scoped>

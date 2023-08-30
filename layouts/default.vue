@@ -5,11 +5,11 @@
 <template>
   <ClientOnly fallback-tag="span" fallback="Loading comments...">
     <a-layout>
-      <LayoutSider />
+      <Sider />
 
-      <LayoutContent>
+      <Content>
         <slot />
-      </LayoutContent>
+      </Content>
     </a-layout>
   </ClientOnly>
 </template>

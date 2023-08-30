@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import axios from 'axios'
 import { dataSource, columns } from '../constants/tableInfo'
+
+const { data: response, pending, error, refresh } = await useAsyncData(
+  'mountains',
+  () => $fetch('http://localhost:3000/products')
+)
+
+console.log(response)
 </script>
 
 <template>
@@ -13,7 +21,7 @@ import { dataSource, columns } from '../constants/tableInfo'
             more
           </nuxt-link>
         </template>
-        <BaseTable :data-source="dataSource" :columns="columns" size="small" />
+        <BarreleyeTable :data-source="dataSource" :columns="columns" size="small" />
       </a-card>
     </div>
 
@@ -23,14 +31,14 @@ import { dataSource, columns } from '../constants/tableInfo'
           more
         </nuxt-link>
       </template>
-      <BaseTable :data-source="dataSource" :columns="columns" size="small" />
+      <BarreleyeTable :data-source="dataSource" :columns="columns" size="small" />
     </a-card>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .ant-card{
-  min-height: 500px;
+  min-height: 350px;
 }
 .card-wrapper{
   display: flex;

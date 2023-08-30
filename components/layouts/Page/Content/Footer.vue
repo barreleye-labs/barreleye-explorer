@@ -1,7 +1,7 @@
 <template>
   <a-layout-footer>
     <div class="footer-top">
-      <BaseLogo path="/" color="black" />
+      <BarreleyeLogo path="/" color="black" />
       <span>Barreleye Labs ©2023 Created by KNYM</span>
     </div>
 

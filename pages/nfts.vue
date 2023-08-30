@@ -4,6 +4,6 @@ import { dataSource, columns } from '../constants/tableInfo'
 
 <template>
   <div>
-    <RouteTable :data-source="dataSource" :columns="columns" />
+    <BarreleyeTableCustom :data-source="dataSource" :columns="columns" />
   </div>
 </template>

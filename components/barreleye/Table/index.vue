@@ -7,15 +7,13 @@ const { dataSource, columns, loading, size } = props
 </script>
 
 <template>
-  <div>
-    <a-table
-      :pagination="false"
-      :data-source="dataSource"
-      :columns="columns"
-      :loading="loading"
-      :size="size"
-    />
-  </div>
+  <a-table
+    :pagination="false"
+    :data-source="dataSource"
+    :columns="columns"
+    :loading="loading"
+    :size="size"
+  />
 </template>
 
 <style lang="scss" scoped>

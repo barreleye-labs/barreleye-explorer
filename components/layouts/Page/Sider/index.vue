@@ -17,9 +17,9 @@ const onBreakpoint = (broken: boolean) => {
     @collapse="onCollapse"
     @breakpoint="onBreakpoint"
   >
-    <BaseLogo path="/" class="sider-logo" />
+    <BarreleyeLogo path="/" class="sider-logo" />
 
-    <SiderMenu />
+    <Menu />
   </a-layout-sider>
 </template>
 
