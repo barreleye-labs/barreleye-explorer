@@ -6,7 +6,6 @@ const onCollapse = (collapsed: boolean, type: string) => {
 const onBreakpoint = (broken: boolean) => {
   // console.log(broken)
 }
-
 </script>
 
 <template>
@@ -14,6 +13,7 @@ const onBreakpoint = (broken: boolean) => {
     breakpoint="lg"
     collapsed-width="0"
     class="layout-sider"
+    width="250"
     @collapse="onCollapse"
     @breakpoint="onBreakpoint"
   >
@@ -24,19 +24,15 @@ const onBreakpoint = (broken: boolean) => {
 </template>
 
 <style lang="scss" scoped>
-.layout-sider{
-  height:100vh;
-}
-.nav-text{
+.nav-text {
   color: #ffffffb3;
   letter-spacing: -1px;
 }
 
-.sider-logo{
+.sider-logo {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 120px;
 }
-
 </style>

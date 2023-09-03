@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import type { Props } from './types'
+type TableSize = 'middle' | 'small' | 'large'
 
+export interface Props {
+  dataSource: any[]
+  columns: []
+  pagination?: boolean
+  loading?: boolean
+  size?: TableSize
+}
 const props = defineProps<Props>()
 
 const { dataSource, columns, loading, size } = props
@@ -9,6 +16,7 @@ const { dataSource, columns, loading, size } = props
 <template>
   <a-table
     :pagination="false"
+    :scroll="{ x: 500 }"
     :data-source="dataSource"
     :columns="columns"
     :loading="loading"
@@ -17,13 +25,13 @@ const { dataSource, columns, loading, size } = props
 </template>
 
 <style lang="scss" scoped>
-:deep(.ant-table-thead > tr > th){
+:deep(.ant-table-thead > tr > th) {
   font-size: 11px;
   font-weight: 400;
   text-align: center;
 }
 
-:deep(.ant-table-tbody > tr > td){
+:deep(.ant-table-tbody > tr > td) {
   font-size: 11px;
 }
 </style>

@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 
 interface Props {
-  path: String,
+  path: String
   color?: String
 }
 
@@ -19,25 +19,19 @@ const getLogoClass = computed(() => {
 </script>
 
 <template>
-  <RouterLink
-    :to="props.path"
-    class="logo"
-    :style="getLogoClass"
-  >
+  <RouterLink :to="props.path" class="logo" :style="getLogoClass">
     Barreleye&nbsp;<span>Explorer</span>
   </RouterLink>
 </template>
 
 <style lang="scss" scoped>
-.logo{
-
+.logo {
   font-size: 18px;
 
   color: white;
   font-weight: 600;
-  > span{
+  > span {
     font-weight: 100;
   }
 }
-
 </style>

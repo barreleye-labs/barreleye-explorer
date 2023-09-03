@@ -8,11 +8,13 @@ const route = useRoute()
 
 const selectedKeys = ref<navItems[]>([''])
 
-const onClick = ({ key }) => router.push({ path: key })
+const onClick = ({ key }) => router.push({ path: `/${key}` })
 
-watch(() => route.name, (name) => {
-  selectedKeys.value = [name]
-}, { immediate: true })
+watch(
+  () => route.path,
+  path => (selectedKeys.value = [path.split('/')[1]]),
+  { immediate: true }
+)
 </script>
 
 <template>
@@ -28,10 +30,9 @@ watch(() => route.name, (name) => {
 </template>
 
 <style lang="scss" scoped>
-.layout-menu{
+.layout-menu {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 </style>

@@ -1,7 +1,16 @@
 <script lang="ts" setup>
 import { toRefs } from 'vue'
-import type { Props, Emits } from './types'
+import { ButtonSize, ButtonType } from 'ant-design-vue/es/button'
 
+export interface Props {
+  loading?: boolean
+  size?: ButtonSize
+  type?: ButtonType
+}
+
+export interface Emits {
+  (e: 'click'): void
+}
 const props = defineProps<Props>()
 const emits = defineEmits<Emits>()
 

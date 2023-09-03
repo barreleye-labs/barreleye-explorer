@@ -9,33 +9,45 @@
 </template>
 
 <style lang="scss" scoped>
-.layout-contents{
+.layout-contents {
   padding: 1rem 2rem;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   max-width: 73%;
+  gap: 2rem;
   margin: 0 auto;
-
-  @media screen and (max-width: 991px ) {
+  overflow: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+  @media screen and (max-width: 991px) {
     max-width: 96%;
   }
 
-  .ant-layout-header{
+  .ant-layout-header {
+    flex: 0.1;
     background-color: transparent;
     padding: 0;
     display: flex;
-    flex: 0.1;
     align-items: center;
     justify-content: center;
   }
 
-  .ant-layout-content{
+  .ant-layout-content {
     flex: 0.9;
+    overflow: scroll;
+  }
+
+  .ant-layout-footer {
+    flex: 0.1;
   }
 }
 
-.ant-layout{
-  background-color: transparent;
+.layout-contents::-webkit-scrollbar {
+  display: none;
+}
 
+.ant-layout {
+  background-color: transparent;
 }
 </style>
