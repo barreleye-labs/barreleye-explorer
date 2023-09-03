@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <ClientOnly fallback-tag="span" fallback="Loading comments...">

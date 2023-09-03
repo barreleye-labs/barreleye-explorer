@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import axios from 'axios'
 import { dataSource, columns } from '../constants/tableInfo'
 
-const { data: response, pending, error, refresh } = await useAsyncData(
-  'mountains',
-  () => $fetch('http://localhost:3000/products')
+const {
+  data: response,
+  pending,
+  error,
+  refresh
+} = await useAsyncData('mountains', () =>
+  $fetch('http://localhost:3000/products')
 )
 
 console.log(response)
@@ -17,49 +20,53 @@ console.log(response)
 
       <a-card title="BLOCKS">
         <template #extra>
-          <nuxt-link to="/blocks">
-            more
-          </nuxt-link>
+          <NuxtLink to="/blocks">
+more
+</NuxtLink>
         </template>
-        <BarreleyeTable :data-source="dataSource" :columns="columns" size="small" />
+        <BarreleyeTable
+          :data-source="dataSource"
+          :columns="columns as []"
+          size="small"
+        />
       </a-card>
     </div>
 
     <a-card title="TRANSACTIONS">
       <template #extra>
-        <nuxt-link to="/tokens">
-          more
-        </nuxt-link>
+        <NuxtLink to="/tokens">
+more
+</NuxtLink>
       </template>
-      <BarreleyeTable :data-source="dataSource" :columns="columns" size="small" />
+      <BarreleyeTable
+        :data-source="dataSource"
+        :columns="columns as []"
+        size="small"
+      />
     </a-card>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.ant-card{
-  min-height: 350px;
-}
-.card-wrapper{
+.card-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
 
-  .card-separate{
+  .card-separate {
     display: flex;
     gap: 10px;
-    > div:nth-child(1){
-      flex: 0.3
+    > div:nth-child(1) {
+      flex: 0.3;
     }
-    > div:nth-child(2){
-      flex: 0.7
+    > div:nth-child(2) {
+      flex: 0.7;
     }
   }
 }
 
-:deep(.ant-card-body){
+:deep(.ant-card-body) {
   padding: 0 !important;
 }
-
 </style>
