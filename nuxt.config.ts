@@ -1,21 +1,23 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import { createResolver } from '@nuxt/kit'
+
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  // exp
+  experimental: {
+    localLayerAliases: true
+  },
+
   imports: {
     autoImport: true
   },
 
   devtools: { enabled: true },
 
-  modules: [
-    '@ant-design-vue/nuxt'
-  ],
+  modules: ['@ant-design-vue/nuxt'],
 
-  css: [
-    '@/styles/main.scss'
-  ],
+  css: ['@/styles/main.scss'],
 
   components: [
     {
