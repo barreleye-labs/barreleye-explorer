@@ -4,6 +4,18 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      titleTemplate: 'Barreleye Explorer',
+      title: 'Barreleye Explorer',
+      charset: 'utf-8',
+      meta: [
+        { name: 'keywords', content: 'blockchain, explorer, nuxt3' },
+        { name: 'description', content: 'Blockchain-based Barreleye' }
+      ],
+      link: []
+    }
+  },
   // exp
   experimental: {
     localLayerAliases: true
