@@ -22,5 +22,5 @@
 
 <br>
 
-### Where is the Core?
+## Where is the Core?
 - [Barreleye Core](https://github.com/barreleye-labs/barreleye)
