@@ -22,7 +22,5 @@
 
 <br>
 
-## Our projects
-![barreleye-fish-black-24](https://github.com/barreleye-labs/barreleye/assets/48827393/698b04c7-454a-4cb9-8680-ac5647b558fc)&nbsp;&nbsp;&nbsp;[Barreleye](https://github.com/barreleye-labs/barreleye)
-
-![barreleye-fish-black-24](https://github.com/barreleye-labs/barreleye/assets/48827393/698b04c7-454a-4cb9-8680-ac5647b558fc)&nbsp;&nbsp;&nbsp;[Barreleye Explorer](https://github.com/barreleye-labs/barreleye-explorer)
+## Where is the Core?
+- [Barreleye Core](https://github.com/barreleye-labs/barreleye)
